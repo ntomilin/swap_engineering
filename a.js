@@ -5,7 +5,7 @@ function myfunc() {
 	// console.log(a)
 	// console.log(b);
 
-	a ^= b ^= a ^= b;
+	a ^= b ^ (b ^= a ^= b);
 
 	console.log(a)
 	console.log(b);
